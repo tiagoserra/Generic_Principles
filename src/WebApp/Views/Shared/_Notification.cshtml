@@ -1,0 +1,11 @@
+﻿@{
+    if (ViewBag.Errors != null)
+    {
+        foreach (var error in @ViewBag.Errors)
+        {
+            <script>
+                    SendNotification('glyphicon glyphicon-warning-sign', ' ','@error', 'danger');
+            </script>
+        }
+    }
+}
